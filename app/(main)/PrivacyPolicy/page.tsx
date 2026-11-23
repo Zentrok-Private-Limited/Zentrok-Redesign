@@ -1,150 +1,138 @@
-// app/privacy-policy/page.tsx
 import Footer from "@/components/Footer";
 
 export default function PrivacyPolicy() {
   return (
     <>
-    <main className="relative text-white min-h-screen px-6 md:px-20 py-24 overflow-hidden">
-      {/* Background Glow */}
-      <div className="absolute inset-0 -z-10">
-        <div className="absolute top-[-120px] left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-yellow-500/20 blur-[140px] rounded-full" />
-      </div>
-
-      <div className="max-w-5xl mx-auto">
-        {/* Header */}
-        <div className="mb-20 text-center space-y-6">
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tight leading-tight">
-            Your Privacy Matters
-          </h1>
-          <p className="text-gray-400 max-w-2xl mx-auto text-sm md:text-base">
-            We believe in transparency and trust. This policy explains how we
-            collect, use, and safeguard your information when you interact with our platform.
-          </p>
+      <main className="relative text-white min-h-screen px-6 md:px-20 py-32 overflow-hidden bg-black">
+        {/* Purple Background Glow - Optunex theme */}
+        <div className="absolute inset-0 -z-10 pointer-events-none">
+          <div
+            className="absolute top-[-100px] left-1/2 -translate-x-1/2 w-[700px] h-[500px] rounded-full opacity-20 blur-[130px]"
+            style={{
+              background:
+                "radial-gradient(circle, #7468fc 0%, #110fdf 50%, transparent 80%)",
+            }}
+          />
         </div>
 
-        {/* Sections */}
-        <div className="space-y-8">
-          <Section title="1. Introduction">
-            We are committed to protecting your personal data and respecting your privacy.
-            This Privacy Policy outlines how your information is collected, used, and protected
-            when you use our website and services.
-          </Section>
+        <div className="max-w-4xl mx-auto">
+          {/* Header */}
+          <div className="mb-20 text-center space-y-4">
+            <span className="text-xs uppercase tracking-[0.25em] text-white/40 font-medium">
+              Legal Documentation
+            </span>
+            <h1
+              className="text-4xl md:text-6xl font-bold tracking-tight leading-tight font-serif"
+              style={{ fontFamily: "'Playfair Display', serif" }}
+            >
+              Privacy Policy
+            </h1>
+            <p className="text-white/50 max-w-2xl mx-auto text-sm md:text-base leading-relaxed">
+              We believe in transparency, integrity, and trust. This policy outlines how <strong>Zentrok Pvt. Ltd.</strong> collects, utilizes, manages, and safeguards your data.
+            </p>
+          </div>
 
-          <Section title="2. Information We Collect">
-            <div className="grid md:grid-cols-2 gap-10">
-              <div>
-                <p className="mb-3 text-lg font-semibold text-white">
-                  Personal Information
-                </p>
-                <ul className="list-disc ml-5 space-y-2">
-                  <li>Name, email address, and phone number</li>
-                  <li>Business or company details</li>
-                  <li>IP address and device/browser information</li>
-                  <li>Usage data, cookies, and interaction behavior</li>
-                </ul>
+          {/* Sections */}
+          <div className="space-y-6">
+            <Section title="1. Introduction">
+              Zentrok Pvt. Ltd. (&ldquo;Company&rdquo;, &ldquo;we&rdquo;, &ldquo;our&rdquo;, or &ldquo;us&rdquo;) is deeply committed to protecting your personal information and respecting your digital privacy. This Privacy Policy governs your access to and use of our digital platforms, applications, consulting services, and associated online solutions.
+            </Section>
+
+            <Section title="2. Information We Collect">
+              <div className="grid md:grid-cols-2 gap-8">
+                <div>
+                  <p className="mb-2 text-base font-semibold text-white">
+                    Personal Information
+                  </p>
+                  <ul className="list-disc ml-5 space-y-1.5 text-white/60 text-sm">
+                    <li>Full name and professional identification</li>
+                    <li>Business email address and organizational details</li>
+                    <li>Service-related requirements and project parameters</li>
+                    <li>Technical logs, device identifiers, and system preferences</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <p className="mb-2 text-base font-semibold text-white">
+                    Technical & Usage Information
+                  </p>
+                  <ul className="list-disc ml-5 space-y-1.5 text-white/60 text-sm">
+                    <li>Browser architecture, version, and language</li>
+                    <li>Operating system and device telemetry</li>
+                    <li>Referral URLs, page dwell duration, and interaction paths</li>
+                    <li>Aggregated analytical and performance diagnostics</li>
+                  </ul>
+                </div>
               </div>
+            </Section>
 
-              <div>
-                <p className="mb-3 text-lg font-semibold text-white">
-                  Non-Personal Information
-                </p>
-                <ul className="list-disc ml-5 space-y-2">
-                  <li>Browser type and version</li>
-                  <li>Device type and operating system</li>
-                  <li>Pages visited and session duration</li>
-                  <li>General analytics data</li>
-                </ul>
-              </div>
-            </div>
-          </Section>
+            <Section title="3. Purpose and Legal Basis of Processing">
+              <p className="mb-3 text-white/70">
+                We collect and process your information under legitimate business interests, contractual necessity, and compliance standards to:
+              </p>
+              <ul className="list-disc ml-5 space-y-1.5 text-white/60 text-sm">
+                <li>Deliver, maintain, and continually refine our IT and consulting solutions</li>
+                <li>Process business requests, proposals, and enterprise deliverables</li>
+                <li>Ensure technical integrity, cybersecurity monitoring, and threat prevention</li>
+                <li>Evaluate performance metrics, platform responsiveness, and operational efficiency</li>
+                <li>Comply with prevailing corporate, statutory, and legal obligations</li>
+              </ul>
+            </Section>
 
-          <Section title="3. How We Use Your Data">
-            <ul className="list-disc ml-5 space-y-2">
-              <li>To provide and improve our services</li>
-              <li>To communicate updates, support, and offers</li>
-              <li>To enhance user experience and performance</li>
-              <li>To run marketing and advertising campaigns</li>
-              <li>To analyze trends and optimize our platform</li>
-            </ul>
-          </Section>
+            <Section title="4. Information Sharing & Third-Party Disclosure">
+              <p className="font-medium text-white mb-2">
+                We strictly do not sell, rent, lease, or monetize your personal data.
+              </p>
+              <p className="text-white/60 text-sm mb-3">
+                Information is only shared under secure, controlled conditions with:
+              </p>
+              <ul className="list-disc ml-5 space-y-1.5 text-white/60 text-sm">
+                <li>Essential infrastructure partners (cloud hosting, secure server providers, diagnostic monitoring)</li>
+                <li>Enterprise tooling strictly bound by stringent non-disclosure and security covenants</li>
+                <li>Regulatory authorities or law enforcement bodies when mandated by applicable judicial proceedings</li>
+              </ul>
+            </Section>
 
-          <Section title="4. Sharing of Information">
-            <p className="font-medium text-white">
-              We do not sell your personal data.
-            </p>
-            <ul className="list-disc ml-5 mt-3 space-y-2">
-              <li>Trusted third-party tools (analytics, ads, CRM)</li>
-              <li>Legal authorities when required by law</li>
-            </ul>
-          </Section>
+            <Section title="5. Cookies & Tracking Technologies">
+              Our website uses technical cookies and session storage mechanisms to enhance navigation performance, remember configuration preferences, and assess traffic volume. You can configure your browser to decline non-essential cookies without impeding basic platform access.
+            </Section>
 
-          <Section title="5. Third-Party Services">
-            <p className="mb-3">
-              Our services may integrate with trusted platforms such as:
-            </p>
-            <ul className="list-disc ml-5 space-y-2">
-              <li>Google (Analytics & Advertising)</li>
-              <li>Meta (Facebook & Instagram Ads)</li>
-            </ul>
-            <p className="mt-3 text-sm text-gray-400">
-              These platforms operate under their own privacy policies, and we encourage you to review them.
-            </p>
-          </Section>
+            <Section title="6. Data Security & Storage Architecture">
+              We employ enterprise-grade cryptographic standards, SSL/TLS protocols, firewalls, and restricted access controls to guard against unauthorized access, alteration, disclosure, or destruction of data. While we implement comprehensive defenses, no electronic transmission over the internet can be guaranteed as entirely infallible.
+            </Section>
 
-          <Section title="6. Data Security">
-            We implement industry-standard security measures to protect your data.
-            However, no digital system is completely secure, and we cannot guarantee absolute protection.
-          </Section>
+            <Section title="7. Data Retention Guidelines">
+              We retain personal data strictly for the duration required to fulfill the operational, consulting, or contractual objectives for which it was gathered, or as mandated by statutory accounting and legal compliance periods.
+            </Section>
 
-          <Section title="7. Your Rights">
-            <p className="mb-2">
-              Depending on applicable laws, you may have the right to:
-            </p>
-            <ul className="list-disc ml-5 space-y-2">
-              <li>Access the data we hold about you</li>
-              <li>Request corrections or deletion</li>
-              <li>Withdraw consent at any time</li>
-            </ul>
-            <p className="mt-3 text-sm">
-              To exercise your rights, contact us at{" "}
-              <span className="text-yellow-400">info@zentrok.com</span>
-            </p>
-          </Section>
+            <Section title="8. User Rights & Data Subject Safeguards">
+              <p className="mb-2 text-white/70">
+                In accordance with applicable privacy regulations, you possess rights regarding your data, including:
+              </p>
+              <ul className="list-disc ml-5 space-y-1.5 text-white/60 text-sm">
+                <li>The right to request access to records of information maintained about you</li>
+                <li>The right to request rectification of inaccurate or outdated information</li>
+                <li>The right to request deletion or erasure of personal information where applicable</li>
+                <li>The right to restrict or object to specific processing activities</li>
+              </ul>
+            </Section>
 
-          <Section title="8. Data Retention">
-            We retain your information only for as long as necessary to fulfill
-            business, legal, or operational requirements.
-          </Section>
+            <Section title="9. Protection of Minors">
+              Our services, digital offerings, and enterprise solutions are strictly designed for businesses and adult professionals aged 18 and above. We do not knowingly solicit or collect personal records from minors.
+            </Section>
 
-          <Section title="9. Children’s Privacy">
-            Our services are not intended for individuals under the age of 18,
-            and we do not knowingly collect data from minors.
-          </Section>
-
-          <Section title="10. Changes to This Policy">
-            We may update this Privacy Policy periodically. Any changes will be
-            reflected on this page with updated information.
-          </Section>
-
-          <Section title="11. Contact Us">
-            <p>
-              Have questions or concerns?
-            </p>
-            <div className="mt-3 space-y-1 text-sm">
-              <p>Email: <span className="text-yellow-400">info@zentrok.com</span></p>
-              <p>Website: <a href="https://www.zentrok.com" className="text-yellow-400">www.zentrok.com</a></p>
-            </div>
-          </Section>
+            <Section title="10. Policy Amendments">
+              We reserve the right to revise or modify this Privacy Policy to reflect evolving industry practices, regulatory mandates, or system capabilities. Updated versions become effective immediately upon being published on this page.
+            </Section>
+          </div>
         </div>
-      </div>
-    </main>
-    <Footer />
+      </main>
+      <Footer showContact={false} />
     </>
   );
 }
 
-/* Section Component */
-
+/* Section Component - Optunex Dark Glassmorphic Card */
 type SectionProps = {
   title: string;
   children: React.ReactNode;
@@ -152,21 +140,14 @@ type SectionProps = {
 
 function Section({ title, children }: SectionProps) {
   return (
-    <div className="group relative p-6 md:p-8 rounded-3xl border border-white/10 bg-white/[0.04] backdrop-blur-xl hover:bg-white/[0.07] transition-all duration-300 shadow-lg hover:shadow-yellow-500/10">
-      
-      {/* Glow Hover Effect */}
-      <div className="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition bg-gradient-to-r from-yellow-500/10 via-transparent to-transparent" />
-
-      <div className="relative space-y-4">
-        <h2 className="text-xl md:text-2xl font-semibold tracking-tight text-white">
+    <div className="group relative p-6 md:p-8 rounded-2xl border border-white/[0.08] bg-white/[0.03] backdrop-blur-sm hover:border-[#7468fc]/30 hover:bg-white/[0.05] transition-all duration-300">
+      <div className="relative space-y-3">
+        <h2 className="text-lg md:text-xl font-bold tracking-tight text-white">
           {title}
         </h2>
-
-        <div className="text-gray-300 leading-relaxed text-sm md:text-base">
+        <div className="text-white/60 leading-relaxed text-sm md:text-base">
           {children}
         </div>
-
-        <div className="w-full h-[1px] bg-white/10 mt-4" />
       </div>
     </div>
   );
